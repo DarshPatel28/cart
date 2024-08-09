@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.empty-cart-message {
+    font-size: 48px;
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="empty-cart-message">Your Cart is Empty</h1>
+        <button class="back-button" onclick="goBack()">Back</button>
+    </div>
+    <script src="script.js">function goBack() {
+        window.history.back();
+    }</script>
+</body>
+</html>
